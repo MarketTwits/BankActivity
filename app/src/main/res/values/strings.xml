@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BankActivity</string>
+    <string name="bank_title">Банк Заречный</string>
+    <string name="writePassToContinue">Введите пароль, чтобы войти в профиль</string>
+    <string name="transition">Переводы:</string>
+    <string name="Summtransition">Сумма перевода:</string>
+    <string name="ChoseCard">Выберите карту для списания:</string>
+</resources>
