@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/button.xml" value="0.1935" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/edit_rectangle.xml" value="0.1935" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/edit_rectangle2.xml" value="0.1935" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/line.xml" value="0.3635" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
       </map>
     </option>
   </component>
