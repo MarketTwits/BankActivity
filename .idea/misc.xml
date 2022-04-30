@@ -3,15 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/Android Studio/AllProject/BankActivity/app/src/main/res/layout/activity_browser.xml" value="0.27447916666666666" />
-        <entry key="..\:/Android/Android Studio/AllProject/BankActivity/app/src/main/res/layout/activity_main.xml" value="0.2074074074074074" />
-        <entry key="..\:/Android/Android Studio/AllProject/BankActivity/app/src/main/res/layout/activity_user_profile.xml" value="0.2074074074074074" />
         <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/button.xml" value="0.1935" />
         <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/edit_rectangle.xml" value="0.1935" />
         <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/edit_rectangle2.xml" value="0.1935" />
         <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/drawable/line.xml" value="0.3635" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_browser.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_pin_view.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/danii/AndroidStudioProjects/BankActivity/app/src/main/res/layout/activity_user_profile.xml" value="0.25" />
       </map>
     </option>
   </component>

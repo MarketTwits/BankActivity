@@ -30,6 +30,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="255dp"
+        android:onClick="onClickActivityBrowser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -127,6 +128,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
@@ -137,7 +139,9 @@
             android:lineSpacingExtra="16sp"
             android:outlineProvider="background"
             android:padding="5dip"
-            android:textSize="18sp" />
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:inputType="number"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -162,7 +166,10 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/edit_rectangle"
             android:outlineProvider="background"
-            android:padding="5dip" />
+            android:padding="5dip"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="20sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -207,19 +214,20 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rb2"
             android:layout_width="31dp"
             android:layout_height="28dp"
+            android:onClick="onRadioButtonClickedRight"
             app:layout_constraintBottom_toBottomOf="@+id/tvUserName12"
             app:layout_constraintEnd_toStartOf="@+id/tvUserName12"
-            app:layout_constraintTop_toTopOf="@+id/tvUserName12"
-            />
+            app:layout_constraintTop_toTopOf="@+id/tvUserName12" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rb1"
             android:layout_width="30dp"
             android:layout_height="27dp"
             android:layout_marginStart="20dp"
+            android:onClick="onRadioButtonClickedLeft"
             android:padding="5dp"
             app:layout_constraintBottom_toBottomOf="@+id/tvUserName6"
             app:layout_constraintEnd_toStartOf="@+id/tvUserName6"
