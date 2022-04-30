@@ -212,7 +212,8 @@
             android:layout_height="28dp"
             app:layout_constraintBottom_toBottomOf="@+id/tvUserName12"
             app:layout_constraintEnd_toStartOf="@+id/tvUserName12"
-            app:layout_constraintTop_toTopOf="@+id/tvUserName12" />
+            app:layout_constraintTop_toTopOf="@+id/tvUserName12"
+            />
 
         <RadioButton
             android:id="@+id/radioButton2"

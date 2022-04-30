@@ -1,10 +1,10 @@
 package com.example.bankactivity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.view.Window
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?)
@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
     {
         val intent = Intent(this, UserProfileActivity::class.java)
         startActivity(intent)
-
+    }
+    fun onBrowserActivity(view: View){
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/"))
+        startActivity(browserIntent)
     }
 }
