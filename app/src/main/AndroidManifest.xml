@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankActivity">
 
+        <activity
             android:name=".Browser_Activity"
             android:exported="false" />
         <activity

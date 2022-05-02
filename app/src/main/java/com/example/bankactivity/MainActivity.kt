@@ -10,6 +10,9 @@ import com.example.bankactivity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    val myArray = arrayOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
+    val arr = arrayOfNulls<String>(5)
+
     lateinit var bindingClass : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -17,6 +20,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
+
+        bindingClass.tvPasswod.text = myArray[0].toString()
+
+        for (i in 1 until myArray.size){
+            bindingClass.tvPasswod.append(myArray[i].toString())
+            bindingClass.tvPasswod.text = myArray.joinToString(separator = " ")
+        }
     }
     fun onClickActivity(view: View)
     {

@@ -15,13 +15,11 @@ class UserProfileActivity : AppCompatActivity() {
     }
     fun onRadioButtonClickedLeft(view: View) {
         if (bindingClass.rb1.isChecked) {
-            // Is the button now checked?
             bindingClass.rb2.isChecked = false
         }
     }
     fun onRadioButtonClickedRight(view: View){
         if (bindingClass.rb2.isChecked) {
-            // Is the button now checked?
             bindingClass.rb1.isChecked = false
         }
     }

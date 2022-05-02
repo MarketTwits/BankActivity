@@ -68,6 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="379dp"
         android:layout_height="361dp"
         android:layout_marginStart="30dp"
@@ -107,8 +108,7 @@
                 android:fontFamily="@font/red_rose"
                 android:text="2"
                 android:textColor="@color/black"
-                android:textSize="28sp"
-                />
+                android:textSize="28sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt3"
@@ -244,6 +244,18 @@
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/tvPasswod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
