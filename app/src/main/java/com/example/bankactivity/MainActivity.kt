@@ -5,13 +5,14 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.View.inflate
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bankactivity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    val myArray = arrayOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
-    val arr = arrayOfNulls<String>(5)
+    private var canAddOperation = false
+    private var canAddDecimal = true
 
     lateinit var bindingClass : ActivityMainBinding
 
@@ -21,21 +22,42 @@ class MainActivity : AppCompatActivity() {
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
 
-        bindingClass.tvPasswod.text = myArray[0].toString()
 
-        for (i in 1 until myArray.size){
-            bindingClass.tvPasswod.append(myArray[i].toString())
-            bindingClass.tvPasswod.text = myArray.joinToString(separator = " ")
-        }
     }
-    fun onClickActivity(view: View)
-    {
-        val intent = Intent(this, UserProfileActivity::class.java)
-        startActivity(intent)
+    fun onClickActivity(view: View) {
+
+        // if (bindingClass.tvPasswod.text.toString() == Constance.Password_Olga) {
+
+            val intent = Intent(this, UserProfileActivity::class.java)
+            startActivity(intent)
+        // }
     }
     fun onBrowserActivity(view: View){
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/"))
         startActivity(browserIntent)
     }
+
+    fun numberAction(view: View)
+    {
+        if(view is Button)
+        {
+            if(view.text == ".")
+            {
+                if(canAddDecimal)
+                    bindingClass.tvPasswod.append(view.text)
+
+                canAddDecimal = false
+            }
+            else
+                bindingClass.tvPasswod.append(view.text)
+
+            canAddOperation = true
+        }
+    }
+    fun tvClear(view: View){
+        bindingClass.tvPasswod.text=""
+    }
+
+
 
 }

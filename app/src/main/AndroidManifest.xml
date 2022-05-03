@@ -16,6 +16,7 @@
         <activity
             android:name=".Browser_Activity"
             android:exported="false" />
+
         <activity
             android:name=".UserProfileActivity"
             android:exported="true" />
