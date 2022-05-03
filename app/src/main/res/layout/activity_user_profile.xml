@@ -129,7 +129,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatEditText
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="64dp"
@@ -142,8 +142,9 @@
             android:textSize="20sp"
             android:singleLine="true"
             android:inputType="number"
-            android:maxLength="16"
-            />
+            android:maxLength="19"
+            app:mask="#### #### #### ####"
+/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -161,7 +162,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatEditText
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_marginLeft="30dp"
@@ -171,7 +172,8 @@
             android:padding="5dip"
             android:singleLine="true"
             android:inputType="number"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            />
 
         <TextView
             android:layout_width="wrap_content"

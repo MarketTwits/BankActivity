@@ -16,10 +16,11 @@
         android:fontFamily="@font/red_rose"
         android:text="@string/bank_title"
         android:textAllCaps="false"
-        android:textStyle="bold"
         android:textColor="@color/lightBlack"
-
         android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
